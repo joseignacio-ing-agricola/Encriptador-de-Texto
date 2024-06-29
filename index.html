@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Encriptador de Texto</h1>
+        </header>
+        <main>
+            <textarea id="input-text" placeholder="Introduce tu texto aquí..."></textarea>
+            <div class="buttons">
+                <button id="encrypt-button"  class="copy-button" aria-label="Encriptar texto">Encriptar</button>
+                <button id="decrypt-button" class="copy-button" aria-label="Desencriptar texto encriptado">Desencriptar</button>
+            </div>
+            <textarea id="output-text" placeholder="Resultado..." readonly></textarea>
+            <div class="buttons">
+                <button id="copy-button" class="copy-button" aria-label="copiar texto encriptado">Copy</button> 
+            </div>
+
+        </main>
+        <footer>
+        <div class="footer">
+            <p> 2024 creado por Jose Ignacio Farias</p>
+        </div>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

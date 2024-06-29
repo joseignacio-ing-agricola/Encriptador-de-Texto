@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --color-primario:#000000;
+    --color-secundario:#f6f6f6;
+    --color-terciario:#ffffff;
+    --color-hover:#021ffd;
+ 
+    --fuente-monserrat:'Monserrat', sans serif;
+
+}
+* {
+    padding: 0;
+    margin:0;
+}
+
+body {
+    width: auto;
+    font-family: var(--fuente-monserrat);
+    background-image: url(img/fondo.jpeg); alt:'Personaje a la Derecha';/* Reemplaza con el nombre de tu imagen de fondo */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--color-primario);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--color-terciario);
+    margin: 0 0 20px;
+    text-align: right;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;   
+    margin-bottom: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--color-hover);
+    color: var(--color-secundario);
+    font-size: 16px;
+    font-family: var(--fuente-montserrat);
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--color-hover);
+}
+.copy-button {
+    flex: 1;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--color-hover);
+    color: var(--color-secundario);
+    font-size: 16px;
+    font-family: var(--fuente-montserrat);
+    transition: background-color 0.3s;
+}
+
+.copy-button:hover {
+    background-color: var(--color-hover);
+}
+
+.copy-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 253, 253, 0.25);
+}
+footer {
+    color: var(--color-secundario);
+    font-family: var(--fuente-montserrat);
+    margin-top: 20px;
+}
+
+/* Añadir ajustes para móviles */
+@media (max-width: 600px) {
+    .textareas {
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        margin: 10px 0;
+    }
+}
